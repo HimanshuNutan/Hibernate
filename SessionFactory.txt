@@ -1,0 +1,34 @@
+->Session factory uses configuration information to instantiate session object appropriately.
+->A thread safe and immutable representation of the mapping of the application domain model to a database
+->Acts as a factory for org.hibernate.Session instances.
+->Session Factory is very expensive to create so for any database, the application should have only one associated 
+Session Factory
+->EntityManager Factory is the JPA equivalent of SessionFactory.
+
+
+-------------Session----------
+represents interaction between application and database at an point of time
+session is short lived object, single threaded
+in JPA session is represented by EntityManager
+Behind the scenes the Hibernate session wraps a JDBC java.sql.Connection and acts as a factory for 
+org.hibernate.Transaction instances.
+
+
+-------------Query-------------
+allows application to query the database for one or more stored objects.
+Hibernate provides different techniques to query database including NamedQuery and Criteria API.
+
+
+------------First Level Cache--------------------
+
+represents the default cache used by Hibernate Session
+
+------------Transaction----------------------
+helps in achieving data consistency
+
+------------Persistent Objects-------------------
+POJO's which get persisted as one of the rows in related table in database 
+
+-----------Second level cache-----
+cache for sessionfactory, used to store objects across sessions
+EhCache - common second level cache providers

@@ -1,0 +1,39 @@
+
+HIBERNATE
+
+- Open source java persistence framework
+- Object Relational Mapping tool(ORM) for java
+- we can map java classes to database tables and map java datatypes to SQL data types
+- we can perform CRUD operations and much more without writing any SQL statements
+
+
+----HIBERNATE QUERY Language allows you to write object oriented queries for advanced options.
+----Implementation of Java Persistence API(JPA) so our code has hight interoperability with other Java EE applications.
+
+Features
+---Object relational mapping
+---Jpa provider - set of specifications for accessing, persisting and managing data
+---Idiomatic Persistence - any class that allow OO principles such as inheritance,
+         polymorphism can be used a persistent class
+--- High performance and scalability - coz provides cache mechanism(2 levels of caching - first level and second
+level caching), lazy initialization, optimistic locking(versioning)
+
+
+
+
+
+
+
+ARCHITECTURE
+
+Configuration
+->written in hibernate.cfg.xml files of hibernate.properties file.
+->For Java Configuration, you may find class annotated with @Configuration
+->Dialect converts the Java Objects to SQL queries
+->Primary key is mandatory in hibernate
+
+@Entity
+@Table
+@Id
+@GeneratedValue - > AutoIncrement
+@SequenceGenerator
